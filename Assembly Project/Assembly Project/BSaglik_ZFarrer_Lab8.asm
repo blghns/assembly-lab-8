@@ -1,12 +1,17 @@
 ;(BSaglik_ZFarrer_Lab8.asm)
 TITLE Bilgehan and Zach Farrer LAB 8
 INCLUDE Irvine32.inc
+INCLUDE Macros.inc
+BufSize = 80
 
 .data
 
-key BYTE 6, 4, 1, 2, 7, 5, 2, 4, 3, 6
-myText BYTE "This text in to be or no fucks given.", 0
+	key BYTE 6, 4, 1, 2, 7, 5, 2, 4, 3, 6
+	myText BYTE "This text is going to be encrypted.", 0
 
+	buffer BYTE BufSize DUP(?),0,0
+	stdInHandle HANDLE ?
+	bytesRead DWORD ?
 
 .code
 main PROC
@@ -35,6 +40,28 @@ main PROC
 
 	call WriteString
 	call Crlf
+
+	;bonus - get string from console and encrypt
+	mWriteln "Write a text to be encrypted."
+	; Get handle to standard input
+	INVOKE GetStdHandle, STD_INPUT_HANDLE
+	mov stdInHandle,eax
+	; Wait for user input
+	INVOKE ReadConsole, stdInHandle, ADDR buffer,
+	BufSize, ADDR bytesRead, 0
+
+	;encrypt and output to console
+	MOV EDX, OFFSET buffer
+	MOV ECX, BufSize
+	MOV EBX, 0
+	call encDecText
+	call WriteString
+	call Crlf
+
+	;decrypt and output to console
+	MOV EBX, 1
+	call encDecText
+	call WriteString
 
 	INVOKE ExitProcess,0 ; end the program
 main ENDP
@@ -73,7 +100,7 @@ encDecText PROC
 		INC EDX
 		loop loopNotEquals
 
-
+		mWriteln "Input decrypted."
 	JMP endCMP
 	equals:
 		MOV EBX, ESI
@@ -98,6 +125,7 @@ encDecText PROC
 
 		INC EDX
 		loop loopEquals
+		mWriteln "Input encrypted."
 	endCMP:
 
 	POPAD

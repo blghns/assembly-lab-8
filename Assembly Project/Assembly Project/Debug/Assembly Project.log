@@ -1,14 +1,14 @@
-﻿Build started 10/20/2015 12:36:14 PM.
-     1>Project "C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Assembly Project\Assembly Project.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/25/2015 1:59:32 PM.
+     1>Project "C:\Users\saglikb\assembly-lab-8\Assembly Project\Assembly Project\Assembly Project.vcxproj" on node 2 (Build target(s)).
      1>_MASM:
          Assembling BSaglik_ZFarrer_Lab8.asm...
-         cmd.exe /C "C:\Users\saglikb\AppData\Local\Temp\tmp4700373dd68b47a584e1e9ff6efcee7c.cmd"
+         cmd.exe /C "C:\Users\saglikb\AppData\Local\Temp\tmp6d07c680293f48e7855f56194c241bd0.cmd"
          ml.exe /c /nologo /Zi /Fo"Debug\BSaglik_ZFarrer_Lab8.obj" /Fl"Assembly Project.lst" /I "C:\Irvine" /W3 /errorReport:prompt  /TaBSaglik_ZFarrer_Lab8.asm
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Debug\Assembly Project.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Irvine irvine32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Debug\Assembly Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Debug\Assembly Project.lib" /MACHINE:X86 /SAFESEH:NO Debug\BSaglik_ZFarrer_Lab8.obj
-         Assembly Project.vcxproj -> C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Debug\Assembly Project.exe
-     1>Done Building Project "C:\Users\saglikb\Desktop\Assembly Lang\Labs\Lab8\Template\Assembly Project\Assembly Project\Assembly Project.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\saglikb\assembly-lab-8\Assembly Project\Debug\Assembly Project.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Irvine irvine32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\saglikb\assembly-lab-8\Assembly Project\Debug\Assembly Project.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\saglikb\assembly-lab-8\Assembly Project\Debug\Assembly Project.lib" /MACHINE:X86 /SAFESEH:NO Debug\BSaglik_ZFarrer_Lab8.obj
+         Assembly Project.vcxproj -> C:\Users\saglikb\assembly-lab-8\Assembly Project\Debug\Assembly Project.exe
+     1>Done Building Project "C:\Users\saglikb\assembly-lab-8\Assembly Project\Assembly Project\Assembly Project.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.43
+Time Elapsed 00:00:00.35
